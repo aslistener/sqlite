@@ -13,9 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        MainWindow.cpp
+        MainWindow.cpp \
+    cppsqlite.cpp \
+    CppSqlitePrivate.cpp
 
-HEADERS  += MainWindow.h
+HEADERS  += MainWindow.h \
+    cppsqlite.h \
+    CppSqlitePrivate.h
 
 FORMS    += MainWindow.ui
 
