@@ -1,3 +1,3 @@
 [submodule "sqlitecpp"]
 	path = sqlitecpp
-	url = https://github.com/iwongu/sqlite3pp.git
+	url = https://github.com/aslistener/sqlite3pp.git
