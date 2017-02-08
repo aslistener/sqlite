@@ -7,20 +7,19 @@
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+DESTDIR = $$_PRO_FILE_PWD_/../../bin/cpptest
 
 TARGET = CppTest
 TEMPLATE = app
 
-
-SOURCES += main.cpp\
-        MainWindow.cpp \
-    cppsqlite.cpp \
-    CppSqlitePrivate.cpp
+SOURCES += main.cpp \
+        MainWindow.cpp
 
 HEADERS  += MainWindow.h \
-    cppsqlite.h \
-    CppSqlitePrivate.h
+    testfunctions.h
 
 FORMS    += MainWindow.ui
 
-include(CppSqlite/CppSqlite.pri)
+#include(CppSqlite/CppSqlite.pri)
+include(GSqlite/GSqlite.pri)
+include(../sqlite3.pri)
