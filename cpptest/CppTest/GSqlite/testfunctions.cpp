@@ -30,8 +30,6 @@ namespace Utils
            QMessageBox::information(0, "db loaded", "db loaded");
         });
 
-
-
         if (!db.open()) {
             QMessageBox::critical(0, qApp->tr("Cannot open database"),
                 qApp->tr("Unable to establish a database connection.\n"
